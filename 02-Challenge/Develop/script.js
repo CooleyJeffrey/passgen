@@ -11,29 +11,30 @@ function generatePassword(){
     return "";
   }
 
-  if (confirm("Lowercase?")) {
-    var lowercase = true;
-    console.log(lowercase);
+  var lowercase = confirm("Would you like to include lowercase?");
+  var uppercase = confirm("Would you like to inclued uppercase?");
+  var numericals = confirm("Would you like to include numbericals?");
+  var special = confirm("Would you like to include special characters?");
+
+  var characterSet = ("");
+
+  if (lowercase) {
+    characterSet += "abcdefghijklmnopqrstuvwxyz";
   }
-  
-  if (confirm("Uppercase?")) {
-    var uppercase = true;
-    console.log(uppercase);
+  if (uppercase) {
+    characterSet += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   }
-  
-  if (confirm("Numericals?")){
-    var numericals = true;
-    console.log(numericals)
+  if (numericals) {
+    characterSet += "0123456789";
   }
-
-  if (confirm("Special Characters")){
-    var special = true;
-    console.log(special)
+  if (special) {
+    characterSet += "!@#$%^&*()-_=+[]{}|;:'\",.<>?/";
   }
 
-
-
-
+  if (characterSet === "") {
+    alert("Please select at least one character type.");
+    return "";
+  }
 
 }
 
