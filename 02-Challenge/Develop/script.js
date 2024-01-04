@@ -29,14 +29,14 @@ function generatePassword(){
     characterSet += "0123456789";
   }
   if (special) {
-    characterSet += "!@#$%^&*()-_=+[]{}|;:'\",.<>?/";
+    characterSet += "!@#$%^&*?";
   }
 
   if (characterSet === "") {
     alert("Please select at least one character type.");
     return "";
   }
-  
+
   var password = ""
   for(var i = 0; i < passwordLength; i++) {
     var random = Math.floor(Math.random() * characterSet.length);
