@@ -20,6 +20,7 @@ function generatePassword(){
 
   if (lowercase) {
     characterSet += "abcdefghijklmnopqrstuvwxyz";
+    console.log(lowercase)
   }
   if (uppercase) {
     characterSet += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -35,6 +36,14 @@ function generatePassword(){
     alert("Please select at least one character type.");
     return "";
   }
+  
+  var password = ""
+  for(var i = 0; i < passwordLength; i++) {
+    var random = Math.floor(Math.random() * characterSet.length);
+    password += characterSet.charAt(random)
+  }
+
+  return password;
 
 }
 
