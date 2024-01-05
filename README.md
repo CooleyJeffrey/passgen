@@ -1,5 +1,8 @@
 # **Passgen**
 
+![Image Preview](02-Challenge\Assets\03-javascript-homework-demo.png)
+
+
 A simple password generator. You can specify password length and select from different character types and generate a password based on your choices.
 
 ## **How to use**
@@ -8,7 +11,7 @@ A simple password generator. You can specify password length and select from dif
 2. Click the 'Generate Password' button and follow the prompts
 3. The generated password will be shown in the box
 
-## Features
+## **Features**
  
  * User-friendly prompts
  * Custom password length
