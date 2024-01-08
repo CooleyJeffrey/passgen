@@ -3,12 +3,12 @@ var generateBtn = document.querySelector("#generate");
 
 // Define a function named genertatePassword
 function generatePassword(){
-  var passwordLength = prompt ("Enter password legnth:");
+  var passwordLength = prompt ("Enter password legnth (between 8 and 128):");
   passwordLength = parseInt(passwordLength);
   
   //Checks if passwordLength is valid
-  if (isNaN(passwordLength)|| passwordLength <= 0) {
-    alert("Please enter a valid number for password length.");
+  if (isNaN(passwordLength)|| passwordLength < 8|| passwordLength > 128) {
+    alert("Please enter a valid number between 8 and 128 for password length.");
     return "";
   }
 
