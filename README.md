@@ -5,6 +5,8 @@
 
 A simple password generator. You can specify password length and select from different character types and generate a password based on your choices.
 
+**Check it out:** [https://cooleyjeffrey.github.io/passgen/](https://cooleyjeffrey.github.io/passgen/)
+
 ## **How to use**
 
 1. Open te html file in the browser of your choice
