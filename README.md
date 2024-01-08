@@ -1,6 +1,6 @@
 # **Passgen**
 
-![Image Preview](02-Challenge\Assets\03-javascript-homework-demo.png)
+![Image Preview](03-javascript-homework-demo.png)
 
 
 A simple password generator. You can specify password length and select from different character types and generate a password based on your choices.
